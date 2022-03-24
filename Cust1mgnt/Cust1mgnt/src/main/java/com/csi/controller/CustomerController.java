@@ -37,7 +37,10 @@ public class CustomerController {
     public String deleteData(@PathVariable int customerId) {
         customerServiceImpl.deleteData(customerId);
         return "Customer Data Deleted Successfully";
-
-
     }
+    @GetMapping("/myname")
+    public String myName(){
+        return "Hrishi";
+    }
+
 }
